@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.20.14",
+    "drizzle-orm": "^0.30.8",
     "lucide-react": "^0.368.0",
     "typewriter-effect": "^2.21.0"
   }
