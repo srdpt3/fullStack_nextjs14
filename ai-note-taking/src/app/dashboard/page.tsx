@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import CreateNoteDiaglog from "@/components/CreateNoteDiaglog";
 
 type Props = {};
 
@@ -33,6 +34,10 @@ const DashboardPage = (props: Props) => {
         {/* if no notes, display this */}
         <div className="text-center">
           <h2 className="text-xl text-gray-500">You have no notes yet</h2>
+        </div>
+        {/*display all the notes */}
+        <div className="grid sm:grid-cols-3 md:grid-cols-5 grid-cols-1 gap-3">
+          <CreateNoteDiaglog />
         </div>
       </div>
     </div>
