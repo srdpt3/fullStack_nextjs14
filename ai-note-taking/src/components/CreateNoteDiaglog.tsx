@@ -35,8 +35,8 @@ const CreateNoteDiaglog = (props: Props) => {
       return;
     }
     createNotebook.mutate(undefined, {
-      onSuccess: () => {
-        console.log("note create");
+      onSuccess: ({ note_id }) => {
+        console.log("created new note: ", { note_id });
       },
       onError: (error) => {
         console.log(error);
